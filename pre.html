@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PreClass</title>
+    </head>
+    <body>
+        <input type="text" id="myInput" placeholder="Enter value">
+            <button  id="myButton" onclick="events()">Submit</button>
+            <h2 id="value1">Enter the value</h2>
+          
+    </body>
+</html>
+<script>
+function events() {
+    var name = document.getElementById("myInput").value;
+    alert(document.getElementById("myInput").value);
+    var detail = document.getElementById("value1");
+    detail.textContent = "Entered value: " + document.getElementById("myInput").value ;
+}
+</script>
